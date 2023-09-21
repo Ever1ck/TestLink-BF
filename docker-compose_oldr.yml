@@ -2,7 +2,7 @@ version: '3.9'
 services:
   testlink:
     image: imtnd/testlink:latest
-    container_name: testlink
+    container_name: testlink-CP
     ports:
       - "80:80"
     environment:
@@ -21,7 +21,7 @@ services:
 
   db:
     image: mysql:5.7.25
-    container_name: testlink-db
+    container_name: testlink-db-CP
     restart: always
     environment:
       MYSQL_DATABASE: 'testlink'
